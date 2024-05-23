@@ -7,5 +7,5 @@ const userController = require('../controller/user.controller');
 //   res.send('create user controller will be here');
 // });
 router.post('/', userController.createUser);
-
+router.post('/login', userController.loginWithEmail);
 module.exports = router;
