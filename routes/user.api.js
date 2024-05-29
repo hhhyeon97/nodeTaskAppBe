@@ -13,4 +13,6 @@ router.post('/login', userController.loginWithEmail);
 // 미들웨어컨셉
 router.get('/me', authController.authenticate, userController.getUser);
 
+router.post('/logout', authController.logout);
+
 module.exports = router;

@@ -24,4 +24,8 @@ authController.authenticate = (req, res, next) => {
   }
 };
 
+authController.logout = (req, res) => {
+  res.status(200).json({ status: 'success', message: '로그아웃 성공!' });
+};
+
 module.exports = authController;
